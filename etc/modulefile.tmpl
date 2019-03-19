@@ -1,0 +1,14 @@
+#%Module
+proc ModulesHelp { } {
+   puts stderr "Go TOUPDATE_VERSION"
+   puts stderr ""
+}
+# One line description
+module-whatis "Go TOUPDATE_VERSION"
+
+set PREFIX TOUPDATE_GOINSTALLDIR
+setenv GO_DIR TOUPDATE_GOINSTALLDIR
+setenv GOROOT TOUPDATE_GOINSTALLDIR
+
+prepend-path PATH            $PREFIX/bin
+
